@@ -15,6 +15,9 @@ project:
   resources:
     - Burcham_CV.pdf
 
+execute:
+  freeze: auto
+
 # Metadata stuff
 pagetitle: "{{< meta title >}} | {{< meta website.title >}}"
 description-meta: "{{< meta description >}}"

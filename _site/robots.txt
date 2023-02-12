@@ -1,1 +1,1 @@
-Sitemap: https://danielburcham.dev/sitemap.xml
+Sitemap: http://danielburcham.dev/sitemap.xml
