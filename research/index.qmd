@@ -1,0 +1,20 @@
+---
+title: "Research"
+description-meta: "{{< meta website.description >}}"
+listing:
+  - id: articles
+    contents: "articles/*/index.qmd"
+    sort: "date desc"
+    template: ../html/research/listing.ejs
+    categories: true
+page-layout: full
+include-back-link: true
+toc-location: right
+---
+
+Often using concepts from the physical sciences to understand biological phenomena, I have investigated several issues related to storm damage in urban trees and forests in recent years, including wind-tree interaction, root system anchorage, and wood decay. Among other topics, I am currently characterizing sources of variability in tree vibration properties to isolate changes associated with specific natural processes, including water accumulation, phenology, and structural deterioration. I regularly work with MATLAB for scientific computing, and I have recently enjoyed learning about R from its active community of users. I am always interested in collaborating - reach out if you see any similarity with your own interests!
+
+## Peer-reviewed journal articles
+
+::: {#articles}
+:::

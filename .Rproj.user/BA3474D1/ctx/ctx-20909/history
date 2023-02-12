@@ -1,0 +1,512 @@
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica") |>
+add_case(x="",y="")
+)
+)
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- tibble(filter(FCwx,MnT < -20)) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica") |>
+add_case(dt="",MnT="")
+)
+)
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- tibble(filter(FCwx,MnT < -20)) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT) |> add_case(dt = "", MnT = "")
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT) |> add_case(dt = "", MnT = "")
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT) |> add_row(dt = "", MnT = "")
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,format="html",align="lc",centering=F) |>
+column_spec(1,width="10em") |>
+column_spec(2,width="3em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+#| warning: false
+#| error: false
+library(tidyverse)
+library(ggplot2)
+library(extRemes)
+library(kableExtra)
+data(FCwx)
+windowsFonts(Inter = windowsFont("Inter"))
+theme_nice <- function() {
+theme_minimal(base_family = "Inter") +
+theme(panel.grid.minor = element_blank(),
+plot.title = element_text(family= "Inter", face = "bold"),
+axis.title = element_text(family = "Inter"),
+strip.text = element_text(family = "Inter", face = "bold",
+size = rel(1), hjust = 0),
+strip.background = element_rect(fill = "grey80", color = NA))
+}
+update_geom_defaults("label", list(family="Inter"))
+update_geom_defaults(ggtext::GeomRichText, list(family="Inter"))
+ggplot(filter(FCwx,MnT < -20),aes(x=Year)) +
+geom_bar() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="b") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="b") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica")
+), results='asis'
+)
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+tbl2 <- filter(FCwx, MnT < 10 & Mn == c(3,4,10,11))
+tbl2 <- filter(FCwx, MnT < 10 & Mn == c(3,4,10,11)) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))   |> select(dt,MnT)
+tbl2$dt <- format(tbl2$dt,'%B %d, %Y')
+138/3
+tbl2 <- filter(FCwx, MnT < 10 & Mn == c(3,4,10,11)) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))   |> select(dt,MnT)
+tbl2$dt <- format(tbl2$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl2[1:46,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl2[47:92,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl2[93:138,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T)
+kable_styling(html_font="Helvetica"),
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica")
+)
+)
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+#| warning: false
+#| error: false
+library(tidyverse)
+library(ggplot2)
+library(extRemes)
+library(kableExtra)
+data(FCwx)
+windowsFonts(Inter = windowsFont("Inter"))
+theme_nice <- function() {
+theme_minimal(base_family = "Inter") +
+theme(panel.grid.minor = element_blank(),
+plot.title = element_text(family= "Inter", face = "bold"),
+axis.title = element_text(family = "Inter"),
+strip.text = element_text(family = "Inter", face = "bold",
+size = rel(1), hjust = 0),
+strip.background = element_rect(fill = "grey80", color = NA))
+}
+update_geom_defaults("label", list(family="Inter"))
+update_geom_defaults(ggtext::GeomRichText, list(family="Inter"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point()
+FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point()
+View(FCwx)
+FCwx %>% mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point()
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point() +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point() +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point(alpha=0.5) +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point(alpha=0.5) +
+geom_smooth() +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point(alpha=0.5,jitter=TRUE) +
+geom_smooth() +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point(shape=".",alpha=0.5,position="jitter") +
+geom_smooth() +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)
+FCwx <- FCwx |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y"))
+ggplot(data=FCwx,aes(x=dt,y=MnT)) +
+geom_point(alpha=0.5,position="jitter") +
+geom_smooth() +
+xlab("Date") + ylab("Minimum Temperature") +
+theme_nice()
+tbl1 <- filter(FCwx,MnT < -20) |> mutate(dt = as.Date(paste(Dy,"-",Mn,"-",Year),"%d - %m - %Y")) |>
+select(dt,MnT)
+tbl1$dt <- format(tbl1$dt,'%B %d, %Y')
+knitr::kables(
+list(kbl(
+tbl1[1:25,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[26:50,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+kable_styling(html_font="Helvetica"),
+kbl(
+tbl1[51:73,],booktabs=TRUE,col.names=c("Date","Min T"),row.names=FALSE,align="lc",valign="t") |>
+column_spec(1,width="10em") |>
+column_spec(2,width="4em") |>
+row_spec(9,bold=T) |>
+kable_styling(html_font="Helvetica")
+)
+)

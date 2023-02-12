@@ -1,0 +1,167 @@
+---
+title: "The motion of trees in the wind: A data synthesis"
+date: 2021-07-06
+author:
+  - name: Toby D. Jackson
+    orcid: 0000-0001-8143-6161
+    affiliation: School of Geography and the Environment, University of Oxford
+  - name: Sarab Sethi
+    url: https://www.plantsci.cam.ac.uk/staff/dr-sarab-singh-sethi
+    orcid: 0000-0002-5939-0432
+    affiliation: Department of Mathematics, Imperial College London
+  - name: Ebba Dellwik
+    url: https://orbit.dtu.dk/en/persons/ebba-dellwik
+    orcid: 0000-0002-0891-9113
+    affiliation: Department of Wind Energy, Technical University Denmark
+  - name: Nikolas Angelou
+    url: https://orbit.dtu.dk/en/persons/nikolas-angelou
+    orcid: 0000-0002-9627-422X
+    affiliation: Department of Wind Energy, Technical University Denmark
+  - name: Amanda Bunce
+    orcid: 0000-0002-2308-5399
+    affiliation: Department of Natural Resources, University of Connecticut
+  - name: Tim van Emmerik
+    orcid: 0000-0002-4773-9107
+    affiliation: Hydrology and Quantitative Water Management Group, Wageningen University
+  - name: Marine Duperat
+    orcid: 0000-0003-3923-0957
+    affiliation: Department of Wood and Forest Sciences, Laval University
+  - name: Jean-Claude Ruel
+    orcid: 0000-0002-6217-3842
+    affiliation: Department of Wood and Forest Sciences, Laval University
+  - name: Axel Wellpott
+    affiliation: Bavarian State Institute of Forestry (LWF)
+  - name: Skip Van Bloem
+    url: https://www.clemson.edu/cafls/faculty_staff/profiles/SKIPVB
+    orcid: 0000-0001-7165-6646
+    affiliation: Baruch Institute of Coastal Ecology and Forest Science, Clemson University
+  - name: Alexis Achim
+    url: https://www.sbf.ulaval.ca/alexis-achim
+    orcid: 0000-0003-0118-1651
+    affiliation: Department of Wood and Forest Sciences, Laval University
+  - name: Brian Kane
+    url: https://eco.umass.edu/people/faculty/kane-brian-c-p/
+    orcid: 0000-0002-2814-0801
+    affiliation: Department of Environmental Conservation, University of Massachusetts Amherst
+  - name: Dominick M. Ciruzzi
+    url: https://www.wm.edu/as/geology/people/faculty/ciruzzi_d.php
+    orcid: 0000-0002-2863-9100
+    affiliation: Department of Civil and Environmental Engineering, University of Wisconsin Madison
+  - name: Steven P. Loheide II
+    url: https://hydroecology.cee.wisc.edu/
+    orcid: 0000-0003-1897-0163
+    affiliation: Department of Civil and Environmental Engineering, University of Wisconsin Madison
+  - name: Ken James
+    affiliation: Melbourne
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
+  - name: John Moore
+    affiliation: Scion, Rotorua, New Zealand
+  - name: Dirk Schindler
+    url: https://www.meteo.uni-freiburg.de/en/team/dirk-schindler/pd-dr-dirk-schindler
+    orcid: 0000-0002-9473-6240
+    affiliation: Environmental Meteorology, University of Freiburg
+  - name: Sven Kolbe
+    url: https://www.meteo.uni-freiburg.de/en/team/sven-kolbe/kolbe-sven
+    orcid: 0000-0002-6208-1745
+    affiliation: Environmental Meteorology, University of Freiburg
+  - name: Kilian Wiegmann
+    affiliation: Argus Electronic GmbH
+  - name: Mark Rudnicki
+    url: https://www.mtu.edu/forest/about/faculty-staff/faculty/rudnicki/
+    orcid: 0000-0002-4225-4469
+    affiliation: College of Forest Resources and Environmental Science, Michigan Technilogical University
+  - name: Victor J. Lieffers
+    url: https://apps.ualberta.ca/directory/person/lieffers
+    orcid: 0000-0001-6939-4093
+    affiliation: Department of Renewable Resources, University of Alberta
+  - name: John Selker
+    url: https://agsci.oregonstate.edu/users/john-selker
+    orcid: 0000-0001-9751-6094
+    affiliation: Biological and Ecological Engineering, Oregon State University
+  - name: Andrew V. Gougherty
+    orcid: 0000-0002-3905-8539
+    affiliation: Department of Botany, University of British Columbia
+  - name: Tim Newson
+    url: https://www.eng.uwo.ca/civil/faculty/newson_t/index.html
+    orcid: 0000-0002-6319-3124
+    affiliation: Department of Civil and Environmental Engineering, Western University
+  - name: Andrew Koeser
+    url: https://gcrec.ifas.ufl.edu/gcrec-facultystaff-directory/andrew-koeser/
+    affiliation: Gulf Coast Research and Education Center, University of Florida
+  - name: Jason Miesbauer
+    orcid: 0000-0002-8124-6189
+    affiliation: The Morton Arboretum
+  - name: Roger Samelson
+    url: https://rsamelson.ceoas.oregonstate.edu/
+    affiliation: College of Earth, Ocean, and Atmospheric Sciences, Oregon State University
+  - name: Jim Wagner
+    affiliation: Oregon Research Electronics
+  - name: Anthony R. Ambrose
+    url: http://www.anthonyrambrose.com/
+    affiliation: Department of Integrative Biology, UC Berkeley
+  - name: Andreas Detter
+    affiliation: Brudi and Partner TreeConsult
+  - name: Steffen Rust
+    url: https://www.hawk.de/de/hochschule/organisation-und-personen/personenverzeichnis/steffen-rust
+    orcid: 0000-0003-0246-0740
+    affiliation: Faculty of Forest Management, University of Applied Science and Art
+  - name: David Coomes
+    url: https://www.plantsci.cam.ac.uk/directory/david-coomes
+    orcid: 0000-0002-8261-2582
+    affiliation: Department of Plant Sciences, University of Cambridge
+  - name: Barry Gardiner
+    affiliation: European Institute of Cultivated Forests
+
+categories:
+  - Biomechanics
+  - Vibration properties
+pub-info:
+  reference: >-
+    Toby Jackson, <a href="https://www.plantsci.cam.ac.uk/staff/dr-sarab-singh-sethi">Sarab Sethi</a>, <a href="https://orbit.dtu.dk/en/persons/ebba-dellwik">Ebba Dellwik</a>, <a href="https://orbit.dtu.dk/en/persons/nikolas-angelou">Nikolas Angelou</a>, Amanda Bunce, Tim van Emmerik, Marine Duperat, Jean-Claude Ruel, Axel Wellpott, <a href="https://www.clemson.edu/cafls/faculty_staff/profiles/SKIPVB">Skip Van Bloem</a>, <a href="https://www.sbf.ulaval.ca/alexis-achim">Alexis Achim</a>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>, <a href="https://www.wm.edu/as/geology/people/faculty/ciruzzi_d.php">Dominick M. Ciruzzi</a>, <a href="https://hydroecology.cee.wisc.edu/">Steven P. Loheide II</a>, Ken James, <strong>Daniel C. Burcham</strong>, John Moore, <a href="https://www.meteo.uni-freiburg.de/en/team/dirk-schindler/pd-dr-dirk-schindler">Dirk Schindler</a>, <a href="https://www.meteo.uni-freiburg.de/en/team/sven-kolbe/kolbe-sven">Sven Kolbe</a>, Kilian Wiegmann, <a href="https://www.mtu.edu/forest/about/faculty-staff/faculty/rudnicki/">Mark Rudnicki</a>, <a href="https://apps.ualberta.ca/directory/person/lieffers">Victor J. Lieffers</a>, <a href="https://agsci.oregonstate.edu/users/john-selker">John Selker</a>, Andrew V. Gougherty, <a href="https://www.eng.uwo.ca/civil/faculty/newson_t/index.html">Tim Newson</a>, <a href="https://gcrec.ifas.ufl.edu/gcrec-facultystaff-directory/andrew-koeser/">Andrew Koeser</a>, Jason Miesbauer, <a href="https://rsamelson.ceoas.oregonstate.edu/">Roger Samelson</a>, Jim Wagner, <a href="http://www.anthonyrambrose.com/">Anthony R. Ambrose</a>, Andreas Detter, <a href="https://www.hawk.de/de/hochschule/organisation-und-personen/personenverzeichnis/steffen-rust">Steffen Rust</a>, <a href="https://www.plantsci.cam.ac.uk/directory/david-coomes">David Coomes</a>, and Barry Gardiner. 2021. The motion of trees in the wind: A data synthesis. Biogeosciences  18: 4059-4072. doi: <a href="https://doi.org/10.5194/bg-18-4059-2021"><code>10.5194/bg-18-4059-2021</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.5194/bg-18-4059-2021
+      icon: fa-solid fa-scroll
+    - name: Code
+      url: https://github.com/TobyDJackson/Tree_motion_data_synthesis
+      icon: fa-brands fa-github
+    - name: Data
+      url: https://doi.org/10.5281/zenodo.4911395
+      icon: fa-solid fa-table
+doi: 10.5194/bg-18-4059-2021
+---
+
+## Abstract
+
+Interactions between wind and trees control energy exchanges between the atmosphere and forest canopies. This energy exchange can lead to the widespread damage of trees, and wind is a key disturbance agent in many of the world's forests. However, most research on this topic has focused on conifer plantations, where risk management is economically important, rather than broadleaf forests, which dominate the forest carbon cycle. This study brings together tree motion time-series data to systematically evaluate the factors influencing tree responses to wind loading, including data from both broadleaf and coniferous trees in forests and open environments.
+
+We found that the two most descriptive features of tree motion were (a) the fundamental frequency, which is a measure of the speed at which a tree sways and is strongly related to tree height, and (b) the slope of the power spectrum, which is related to the efficiency of energy transfer from wind to trees. Intriguingly, the slope of the power spectrum was found to remain constant from medium to high wind speeds for all trees in this study. This suggests that, contrary to some predictions, damping or amplification mechanisms do not change dramatically at high wind speeds, and therefore wind damage risk is related, relatively simply, to wind speed.
+
+Conifers from forests were distinct from broadleaves in terms of their response to wind loading. Specifically, the fundamental frequency of forest conifers was related to their size according to the cantilever beam model (i.e. vertically distributed mass), whereas broadleaves were better approximated by the simple pendulum model (i.e. dominated by the crown). Forest conifers also had a steeper slope of the power spectrum.We interpret these finding as being strongly elated to tree architecture; i.e. conifers generally have a simple shape due to their apical dominance, whereas broadleaves exhibit a much wider range of architectures with more dominant crowns.
+
+## Illustrative figure
+
+![Figure 1: Overview of the study design. **(a)** Conceptual diagram of data collection showing three "types" of trees (colours) swaying in the wind. **(b)** A 5 min sample of tree motion data for three trees. **(c)** Fourier transformed data used to calculate the fundamental frequency, slope of the power spectrum, and related features.](bg-18-4059-2021-f01.png){width="60%"}
+
+## Materials
+
+-   [Paper (final version)](https://doi.org/10.5194/bg-18-4059-2021)
+-   [Code](https://github.com/TobyDJackson/Tree_motion_data_synthesis)
+-   [Data](https://doi.org/10.5281/zenodo.4911395)
+
+## BibTeX citation
+
+``` bibtex
+@article{Jacksonetal:2021,
+    Author = {Toby Jackson, Sarab Sethi, Ebba Dellwik, Nikolas Angelou, Amanda Bunce, Tim van Emmerik, Marine Duperat, Jean-Claude Ruel, Axel Wellpott, Skip Van Bloem, Alexis Achim, Brian Kane, Dominick M. Ciruzzi, Steven P. Loheide II, Ken James, <strong>Daniel C. Burcham</strong>, John Moore, Dirk Schindler, Sven Kolbe, Kilian Wiegmann, Mark Rudnicki, Victor J. Lieffers, John Selker, Andrew V. Gougherty, Tim Newson, Andrew Koeser, Jason Miesbauer, Roger Samelson, Jim Wagner, Anthony R. Ambrose, Andreas Detter, Steffen Rust, David Coomes, and Barry Gardiner},
+    Doi = {10.5194/bg-18-4059-2021},
+    Journal = {Biogeosciences},
+    Month = {7},
+    Pages = {4059-4072},
+    Title = {The motion of trees in the wind: A data synthesis},
+    Volume = {18},
+    Year = {2021}}
+```

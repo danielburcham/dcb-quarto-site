@@ -1,0 +1,115 @@
+---
+title: "An architectural understanding of natural sway frequencies in trees"
+date: 2019-06-05
+author:
+  - name: Toby Jackson
+    orcid: 0000-0001-8143-6161
+    affiliation: School of Geography and the Environment, University of Oxford
+  - name: Alexander Shenkin
+    url: https://al.shenkin.org/
+    orcid: 0000-0003-2358-9367
+    affiliation: School of Geography and the Environment, University of Oxford
+  - name: John Moore
+    affiliation: Scion, Rotorua, New Zealand
+  - name: Amanda Bunce
+    orcid: 0000-0002-2308-5399
+    affiliation: Department of Natural Resources, University of Connecticut
+  - name: Tim van Emmerik
+    orcid: 0000-0002-4773-9107
+    affiliation: Water Resources Section, Delft University of Technology
+  - name: Brian Kane
+    url: https://eco.umass.edu/people/faculty/kane-brian-c-p/
+    orcid: 0000-0002-2814-0801
+    affiliation: Department of Environmental Conservation, University of Massachusetts Amherst
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
+  - name: Ken James
+    affiliation: Melbourne
+  - name: John Selker
+    url: https://agsci.oregonstate.edu/users/john-selker
+    orcid: 0000-0001-9751-6094
+    affiliation: Department of Crop and Soil Science, Oregon State University
+  - name: Kim Calders
+    url: https://www.ugent.be/bw/environment/en/research/cavelab/contact/kimcalders.htm
+    orcid: 0000-0002-4562-2538
+    affiliation: Department of Environment, Ghent University
+  - name: Niall Origo
+    orcid: 0000-0002-8475-6264
+    affiliation: National Physical Laboratory
+  - name: Mathias Disney
+    url: https://www.geog.ucl.ac.uk/people/academic-staff/mat-disney
+    orcid: 0000-0002-2407-4026
+    affiliation: Department of Geography, University College London
+  - name: Andrew Burt
+    affiliation: Department of Geography, University College London
+  - name: Phil Wilkes
+    orcid: 0000-0001-6048-536X
+    affiliation: Department of Geography, University College London
+  - name: Pausi Raumonen
+    url: https://www.tuni.fi/en/pasi-raumonen
+    orcid: 0000-0001-5471-0970
+    affiliation: Tampere University of Technology
+  - name: Jose Gonzalez de Tanago Menaca
+    orcid: 0000-0001-5461-8250
+    affiliation: Laboratory of Geo-Information Science and Remote Sensing, Wageningen University
+  - name: Alvaro Lau
+    url: https://www.wur.nl/en/persons/alvaro-dr.ir.-ai-alvaro-lau-sarmiento-msc.htm
+    orcid: 0000-0002-0419-7002
+    affiliation: Laboratory of Geo-Information Science and Remote Sensing, Wageningen University
+  - name: Martin Herold
+    url: https://www.gfz-potsdam.de/en/staff/martin.herold/sec14
+    orcid: 0000-0003-0246-6886
+    affiliation: Laboratory of Geo-Information Science and Remote Sensing, Wageningen University
+  - name: Rosa C. Goodman
+    url: https://www.slu.se/en/ew-cv/rosa-goodman/
+    affiliation: Department of Forest Ecology and Management, Swedish University of Agricultural Sciences
+  - name: Thierry Fourcaud
+    url: http://amap-collaboratif.cirad.fr/pages-chercheurs/?page_id=541
+    orcid: 0000-0001-9475-7239
+    affiliation: AMAP, University of Montpellier
+  - name: Yadvinder Malhi
+    url: https://www.geog.ox.ac.uk/staff/ymalhi.html
+    orcid: 0000-0002-3503-4783
+    affiliation: School of Geography and the Environment, University of Oxford
+categories:
+  - Biomechanics
+  - Vibration properties
+  - Tree architecture
+pub-info:
+  reference: >-
+    Toby Jackson, <a href="https://al.shenkin.org/">Alexander Shenkin</a>, John Moore, Amanda Bunce, Tim van Emmerik, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>, <strong>Daniel C. Burcham</strong>, Ken James, <a href="https://agsci.oregonstate.edu/users/john-selker">John Selkerq</a>, <a href="https://www.ugent.be/bw/environment/en/research/cavelab/contact/kimcalders.htm">Kim Calders</a>, Niall Origo, <a href="https://www.geog.ucl.ac.uk/people/academic-staff/mat-disney">Mathias Disney</a>, Andrew Burt, Phil Wilkes, <a href="https://www.tuni.fi/en/pasi-raumonen">Pausi Raumonen</a>, Jose Gonzalez de Tanago Menaca, <a href="https://www.wur.nl/en/persons/alvaro-dr.ir.-ai-alvaro-lau-sarmiento-msc.htm">Alvaro Lau</a>, <a href="https://www.gfz-potsdam.de/en/staff/martin.herold/sec14">Martin Herold</a>, <a href="https://www.slu.se/en/ew-cv/rosa-goodman/">Rosa C. Goodman</a>, <a href="http://amap-collaboratif.cirad.fr/pages-chercheurs/?page_id=541">Thierry Fourcaud</a>, and <a href="https://www.geog.ox.ac.uk/staff/ymalhi.html">Yadvinder Malhi</a>. 2019. An architectural understanding of natural sway frequencies in trees. Journal of the Royal Society Interface  16(155): 20190116. doi: <a href="https://doi.org/10.1098/rsif.2019.0116"><code>10.1098/rsif.2019.0116</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1098/rsif.2019.0116
+      icon: fa-solid fa-scroll
+doi: 10.1098/rsif.2019.0116
+---
+
+## Abstract
+
+The relationship between form and function in trees is the subject of a longstanding debate in forest ecology and provides the basis for theories concerning forest ecosystem structure and metabolism. Trees interact with the wind in a dynamic manner and exhibit natural sway frequencies and damping processes that are important in understanding wind damage. Tree-wind dynamics are related to tree architecture, but this relationship is not well understood. We present a comprehensive view of natural sway frequencies in trees by compiling a dataset of field measurement spanning conifers and broadleaves, tropical and temperate forests. The field data show that a cantilever beam approximation adequately predicts the fundamental frequency of conifers, but not that of broadleaf trees. We also use structurally detailed tree dynamics simulations to test fundamental assumptions underpinning models of natural frequencies in trees. We model the dynamic properties of greater than 1000 trees using a finite-element approach based on accurate three- dimensional model trees derived from terrestrial laser scanning data. We show that (1) residual variation, the variation not explained by the cantilever beam approximation, in fundamental frequencies of broadleaf trees is driven by their architecture; (2) slender trees behave like a simple pendulum, with a single natural frequency dominating their motion, which makes them vulnerable to wind damage and (3) the presence of leaves decreases both the fundamental frequency and the damping ratio. These findings demonstrate the value of new three-dimensional measurements for understanding wind impacts on trees and suggest new directions for improving our understanding of tree dynamics from conifer plantations to natural forests.
+
+## Illustrative figure
+
+![Figure 1: Simulated fundamental sway frequency of a tree. Finite-element simulation output showing the two extreme positions (blue and red) for a sycamore tree (*Acer pseudoplatanus*) swaying at its fundamental frequency, *f*~0~ = 0.26 Hz.](rsif20190116f01.jpg){width=60%}
+
+## Materials
+
+-   [Paper (final version)](https://doi.org/10.1098/rsif.2019.0116)
+
+## BibTeX citation
+
+``` bibtex
+@article{Jacksonetal:2019,
+    Author = {Toby Jackson, Alexander Shenkin, John Moore, Amanda Bunce, Tim van Emmerik, Brian Kane, Daniel C. Burcham, Ken James, John Selker, Kim Calders, Niall Origo, Mathias Disney, Andrew Burt, Phil Wilkes, Pausi Raumonen, Jose Gonzalez de Tanago Menaca, Alvaro Lau, Martin Herold, Rosa C. Goodman, Thierry Fourcaud, and Yadvinder Malhi},
+    Doi = {10.1098/rsif.2019.0116},
+    Journal = {Journal of the Royal Society Interface},
+    Month = {6},
+    Pages = {20190116},
+    Title = {An architectural understanding of natural sway frequencies in trees},
+    Volume = {16},
+    Issue = {155},
+    Year = {2019}}
+```

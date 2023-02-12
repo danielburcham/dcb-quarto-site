@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<style>body{background-color:white;}</style>
+<script src="lib/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="lib/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="lib/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="lib/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="lib/kePrint-0.0.1/kePrint.js"></script>
+<link href="lib/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+</head>
+<body>
+<table>
+<caption>Logsitic model selection by information criteria</caption>
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Model </th>
+   <th style="text-align:left;"> Terms </th>
+   <th style="text-align:right;"> AIC </th>
+   <th style="text-align:right;"> BIC </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 1 </td>
+   <td style="text-align:left;"> DMsmntHt + MsmntHt + Symptoms + Species </td>
+   <td style="text-align:right;width: 5em; "> 350.25 </td>
+   <td style="text-align:right;width: 5em; "> 380.47 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 2 </td>
+   <td style="text-align:left;"> DMsmntHt + MsmntHt + Symptoms </td>
+   <td style="text-align:right;width: 5em; "> 353.97 </td>
+   <td style="text-align:right;width: 5em; "> 369.08 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 3 </td>
+   <td style="text-align:left;"> DMsmntHt + Symptoms + Species </td>
+   <td style="text-align:right;width: 5em; "> 349.25 </td>
+   <td style="text-align:right;width: 5em; "> 375.69 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 4 </td>
+   <td style="text-align:left;"> MsmntHt + Symptoms + Species </td>
+   <td style="text-align:right;width: 5em; "> 373.09 </td>
+   <td style="text-align:right;width: 5em; "> 399.54 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 5 </td>
+   <td style="text-align:left;"> DMsmntHt + MsmntHt + Species </td>
+   <td style="text-align:right;width: 5em; "> 367.16 </td>
+   <td style="text-align:right;width: 5em; "> 393.61 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 6 </td>
+   <td style="text-align:left;"> DMsmntHt + MsmntHt </td>
+   <td style="text-align:right;width: 5em; "> 376.78 </td>
+   <td style="text-align:right;width: 5em; "> 388.11 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 7 </td>
+   <td style="text-align:left;"> DMsmntHt + Symptoms </td>
+   <td style="text-align:right;width: 5em; "> 352.86 </td>
+   <td style="text-align:right;width: 5em; "> 364.19 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 8 </td>
+   <td style="text-align:left;"> DMsmntHt + Species </td>
+   <td style="text-align:right;width: 5em; "> 365.29 </td>
+   <td style="text-align:right;width: 5em; "> 387.95 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 9 </td>
+   <td style="text-align:left;"> MsmntHt + Symptoms </td>
+   <td style="text-align:right;width: 5em; "> 373.92 </td>
+   <td style="text-align:right;width: 5em; "> 385.25 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 10 </td>
+   <td style="text-align:left;"> MsmntHt + Species </td>
+   <td style="text-align:right;width: 5em; "> 386.81 </td>
+   <td style="text-align:right;width: 5em; "> 409.48 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 11 </td>
+   <td style="text-align:left;"> Symptoms + Species </td>
+   <td style="text-align:right;width: 5em; "> 372.85 </td>
+   <td style="text-align:right;width: 5em; "> 395.51 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 12 </td>
+   <td style="text-align:left;"> DMsmntHt </td>
+   <td style="text-align:right;width: 5em; "> 374.81 </td>
+   <td style="text-align:right;width: 5em; "> 382.37 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 13 </td>
+   <td style="text-align:left;"> MsmntHt </td>
+   <td style="text-align:right;width: 5em; "> 393.19 </td>
+   <td style="text-align:right;width: 5em; "> 400.75 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 14 </td>
+   <td style="text-align:left;"> Symptoms </td>
+   <td style="text-align:right;width: 5em; "> 373.34 </td>
+   <td style="text-align:right;width: 5em; "> 380.90 </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;width: 5em; "> 15 </td>
+   <td style="text-align:left;"> Species </td>
+   <td style="text-align:right;width: 5em; "> 385.60 </td>
+   <td style="text-align:right;width: 5em; "> 404.49 </td>
+  </tr>
+</tbody>
+</table> <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax: {inlineMath: [["$","$"]]}})</script><script async src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</body>
+</html>

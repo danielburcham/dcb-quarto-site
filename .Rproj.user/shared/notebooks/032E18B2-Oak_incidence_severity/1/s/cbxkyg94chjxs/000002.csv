@@ -1,0 +1,49 @@
+"0","```r
+# Load libraries
+library(betareg)
+library(bookdown)
+library(broom)
+library(car)
+library(dismo)
+library(emmeans)
+library(equatiomatic)
+library(extraDistr)
+library(ggh4x)
+library(ggtext)
+library(gmodels)
+library(gridExtra)
+library(gtools)
+library(fitdistrplus)
+library(kableExtra)
+library(lme4)
+library(lmtest)
+library(LogisticDx)
+library(marginaleffects)
+library(MASS)
+library(modelsummary)
+library(multcomp)
+library(multcompView)
+library(pander)
+library(patchwork)
+library(readxl)
+library(ROCR)
+library(sandwich)
+library(scales)
+library(svglite)
+library(tidyverse)
+
+windowsFonts(Inter = windowsFont(\"Inter\"))
+
+theme_nice <- function() {
+  theme_minimal(base_family = \"Inter\") + 
+    theme(panel.grid.minor = element_blank(),
+          plot.title = element_text(family= \"Inter\", face = \"bold\"),
+          axis.title = element_text(family = \"Inter\"),
+          strip.text = element_text(family = \"Inter\", face = \"bold\",
+                                    size = rel(1), hjust = 0),
+          strip.background = element_rect(fill = \"grey80\", color = NA))
+}
+
+update_geom_defaults(\"label\", list(family=\"Inter\"))
+update_geom_defaults(ggtext::GeomRichText, list(family=\"Inter\"))
+```"

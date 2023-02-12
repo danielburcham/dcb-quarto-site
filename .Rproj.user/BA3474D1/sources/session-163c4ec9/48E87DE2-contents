@@ -1,0 +1,62 @@
+---
+title: "Field evaluation of *Trichoderma* spp. as a biological control agent to prevent wood decay on Benin mahogany (*Khaya grandifoliola*) and rain tree (*Samanea saman*) in Singapore"
+date: 2017-08-15
+author:
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
+  - name: Nelson V. Abarrientos
+    orcid: 0000-0003-2046-2723
+    affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
+  - name: Jia-Yih Wong
+    affiliation: Plant Health Laboratory Department, Agri-Food & Veterinary Authority, Singapore
+  - name: Mohamed Ismail Mohamed Ali
+    affiliation: Plant Health Laboratory Department, Agri-Food & Veterinary Authority, Singapore
+  - name: Yok-King Fong
+    affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
+  - name: Francis W.M.R. Schwarze
+    affiliation: Applied Wood Materials, Empa Swiss Federal Laboratories for Science and Technology, St. Gallen, Switzerland
+    orcid: 0000-0003-3306-8303
+categories:
+  - Wood decay
+  - Biological control
+pub-info:
+  reference: >-
+    <strong>Daniel C. Burcham</strong>, Nelson V. Abarrientos, Jia-Yih Wong, Yok-King Fong, and Francis W.M.R. Schwarze. 2017. Field evaluation of Trichoderma spp. as a biological control agent to prevent wood decay on Benin mahogany (Khaya grandifoliola) and rain tree (Samanea saman) in Singapore. Biological Control 114: 114-124. doi: <a href="https://doi.org/10.1016/j.biocontrol.2017.08.004"><code>10.1016/j.biocontrol.2017.08.004</code></a>
+  links:
+    - name: Preprint
+      url: BCON-17-0098.pdf
+      icon: fa-solid fa-file-pdf
+      local: true
+    - name: Final version
+      url: https://doi.org/10.1016/j.biocontrol.2017.08.004
+      icon: fa-solid fa-scroll
+doi: 10.1016/j.biocontrol.2017.08.004
+---
+
+## Abstract
+
+In paired field experiments, two *Trichoderma* sp. isolates were evaluated for their ability to separately prevent wood decay on the pruning wounds of Benin mahogany (*Khaya grandifoliola*) and rain tree (*Samanea saman*)in Singapore. For each species, 150 pruning wounds were created among 10 trees and received either a conidial suspension of the biological control agent or no treatment. At regular intervals, the ability of the isolates to colonize wounds was evaluated using selective fungal isolations, and wound wood occlusion was simultaneously monitored by successive wound diameter measurements. After 18 months, the wounds were harvested and dissected to measure the size of wood discoloration columns. Overall, relatively superior outcomes for the biological control of wood decay were observed on rain tree compared to Benin mahogany. *Trichoderma* spp. were approximately twice as abundant on the treated wounds of rain tree than Benin mahogany at all times during the experiment. Although the *Trichoderma* spp. isolates were effectively inoculated onto the pruning wounds of both species, they were isolated at rates that declined by approximately half over the 18-month experiment. Compared to non-treated controls, rain tree pruning wounds treated with *T. harzianum* 9132 had significantly less wood discoloration and greater wound wood occlusion, but the same treatment effects were not observed on Benin mahogany using *T. virens* W23. The results demonstrate that *T. harzianum* 9132 is an effective biological control agent for wood decay on rain tree, and the treatment effects offer a valuable way to limit the biological and mechanical costs of tree pruning.
+
+## Illustrative figure
+
+![Figure 1: An arborist samples wood chips from a Benin mahogany pruning wound treated with *Trichoderma virens* W23 to determine colonization and persistence of the biocontrol agent.](DSC_0015.jpg)
+
+## Materials
+
+-   [Paper (preprint)](BCON-17-0098.pdf)
+
+## BibTeX citation
+
+``` bibtex
+@article{Burchametal:2017,
+    Author = {Daniel C. Burcham, Nelson V. Abarrientos, Jia-Yih Wong, Mohamed Ismail Mohamed Ali, Yok-King Fong, Francis W.M.R. Schwarze},
+    Doi = {10.1016/j.biocontrol.2017.08.004},
+    Journal = {Biological Control},
+    Month = {8},
+    Pages = {114-124},
+    Title = {Field evaluation of Trichoderma spp. as a biological control agent to prevent wood decay on Benin mahogany (Khaya grandifoliola) and rain tree (Samanea saman) in Singapore},
+    Volume = {114},
+    Year = {2017}}
+```

@@ -1,0 +1,25 @@
+description-meta: "{{< meta website.description >}}"
+
+# Date format
+date-format: "dddd, MMMM D, YYYY"
+
+# Default for table of contents
+toc: true
+toc-title: Contents
+toc-location: left
+
+# Default knitr options
+execute:
+  echo: false
+  message: false
+  warning: false
+
+# Default author
+author:
+  - name: Daniel Burcham
+    url: https://www.danielburcham.dev/
+    orcid: 0000-0002-1793-3945
+
+format:
+  html:
+    code-tools: true
