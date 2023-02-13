@@ -14,7 +14,7 @@ project:
   
   resources:
     - Burcham_CV.pdf
-
+    
 execute:
   freeze: auto
 
@@ -35,10 +35,6 @@ website:
   open-graph:
     locale: en_US
 
-  comments:
-    utterances:
-      repo: Documents/danielburcham.dev
-
   navbar:
     right:
       - text: "Home"
@@ -57,4 +53,3 @@ format:
     code-link: true
     css: styles.css
     theme: [sandstone, _variables.scss]
-    embed-resources: true
