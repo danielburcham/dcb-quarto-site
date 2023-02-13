@@ -26,8 +26,8 @@ author-meta: "Daniel Burcham"
 website:
   title: "Daniel Burcham"
   description: "Daniel Burcham is an assistant professor at Colorado State University studying and teaching about trees"
-  site-url: "http://danielburcham.dev"
-  repo-url: "https://github.com/danielburcham/dcb-quarto-site"
+  site-url: https://danielburcham.dev
+  repo-url: https://github.com/danielburcham/dcb-quarto-site
   
   google-analytics: "G-Y33GXW5WS7"
   cookie-consent: true
