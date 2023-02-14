@@ -22,4 +22,4 @@ jobs:
       - name: Render site
         uses: quarto-dev/quarto-actions/render@v2
       - name: Deploy site
-        run: rsync -a ${{ env.QUARTO_OUTPUT }} deploy@146.190.32.124:/home/deploy/dcb-quarto-site
+        run: rsync -a -e "ssh -i ~/.ssh/id_ed25519_deploy" ${{ env.QUARTO_OUTPUT }} deploy@146.190.32.124:/home/deploy/dcb-quarto-site
