@@ -1,0 +1,23 @@
+name: Build and deploy dcb-quarto-site
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Create .ssh directory
+        run: mkdir ~/.ssh && chmod 700 ~/.ssh
+      - name: Install the key
+        run: echo ${{ secrets.DEPLOY_KEY }} > ~/.ssh/id_ed25519_dan
+      - name: Create known hosts
+        run: echo ${{ secrets.KNOWN_HOSTS }} > ~/.ssh/known_hosts
+      - name: Render site
+        uses: quarto-dev/quarto-actions/render@v2
+        run: | 
+        quarto render . --to html
+        echo "QUARTO_OUTPUT=_site" >> $GITHUB_ENV
+      - name: Deploy site
+        run: rsync -a ${{ env.QUARTO_OUTPUT }} dan@146.190.32.124:/home/dan/dcb-quarto-site/site
