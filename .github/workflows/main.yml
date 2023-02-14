@@ -14,10 +14,9 @@ jobs:
         run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519_dan
       - name: Create known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
-      - uses: quarto-dev/quarto-actions/render@v2
       - name: Render site
-        run: | 
-          quarto render
-          echo "QUARTO_OUTPUT=_site" >> $GITHUB_ENV
+        uses: quarto-dev/quarto-actions/render@v2
+          with:
+            to: html
       - name: Deploy site
         run: rsync -a ${{ env.QUARTO_OUTPUT }} dan@146.190.32.124:/home/dan/dcb-quarto-site/site
