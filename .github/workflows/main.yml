@@ -10,11 +10,10 @@ jobs:
       - uses: actions/checkout@v2
       - name: Create .ssh directory
         run: mkdir ~/.ssh && chmod 700 ~/.ssh
-      - name: Create SSH key and known hosts
-        uses: kielabokkie/ssh-key-and-known-hosts-action@v1
-        with:
-          ssh-private-key: ${{ secrets.DEPLOY_KEY }}
-          ssh-host: 146.190.32.124
+      - name: Install SSH key
+        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519_dan
+      - name: Create known hosts
+        run: eco "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - uses: quarto-dev/quarto-actions/render@v2
       - name: Render site
         run: | 
