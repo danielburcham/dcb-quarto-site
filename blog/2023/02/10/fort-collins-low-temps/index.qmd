@@ -14,6 +14,7 @@ categories:
 ---
 
 ```{r setup, include=FALSE}
+library(knitr)
 #Check the settings
 knitr::opts_chunk$set(fig.width = 6, fig.align = "center", 
                       fig.retina = 3, out.width = "85%", 
@@ -42,16 +43,15 @@ To update the data, I consolidated the 20^th^ Century weather data from Fort Col
 
 ```{r libraries-data-graphics, echo=TRUE, warning=FALSE, error=FALSE}
 library(tidyverse)
-library(ggplot2)
 library(ggtext)
 library(extRemes)
 library(gridExtra)
 library(lubridate)
 library(kableExtra)
-library(knitr)
 library(httr)
 library(jsonlite)
 library(modelsummary)
+library(renv)
 
 # Load FCwx data from extRemes package
 data(FCwx)
@@ -216,6 +216,7 @@ footnote(kbl(fit2.model.summary, format="html", booktabs=TRUE, col.names=c("Para
 The fit statistics and model diagnostics (not shown) generally suggest that the second model is a better choice between the two non-stationary candidate models. Although it could undoubtedly be improved, I want to explore some applications. With the fit model, you can calculate several things 
 
 ```{r return-levels, echo=TRUE, warning=FALSE, error=FALSE}
+#| code-fold: true
 #| label: fig-return-levels
 #| fig-cap: "Effective 100-year return levels for daily minimum temperatures in Fort Collins, CO on different dates"
 v1 <- make.qcov(fit2, vals = list(mu1 = cos(2*pi*60:120/365.25), mu2 = sin(2*pi*60:120/365.25), mu3 = rep(1900,61), phi1 = cos(2*pi*60:120/365.25), phi2 = sin(2*pi*60:120/365.25)))
