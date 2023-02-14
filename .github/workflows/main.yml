@@ -14,9 +14,9 @@ jobs:
           use-public-rspm: true
       - uses: r-lib/actions/setup-renv@v2
       - name: Create .ssh directory
-        run: mkdir ~/.ssh && chmod 600 ~/.ssh
+        run: mkdir ~/.ssh && chmod 700 ~/.ssh
       - name: Install SSH key
-        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519_deploy
+        run: echo "${{ secrets.DEPLOY_KEY }}" > ~/.ssh/id_ed25519_deploy && chmod 600 ~/.ssh/id_ed25519_deploy
       - name: Create known hosts
         run: echo "${{ secrets.KNOWN_HOSTS }}" > ~/.ssh/known_hosts
       - name: Render site
