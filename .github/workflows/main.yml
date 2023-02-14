@@ -16,7 +16,7 @@ jobs:
           key: ${{ secrets.DEPLOY_KEY }}
           known_hosts: unnecessary
       - name: Create known hosts
-        run: ssh-keyscan _H ${{ secrets.KNOWN_HOSTS }} >> ~/.ssh/known_hosts
+        run: echo ${{ secrets.KNOWN_HOSTS }} >> ~/.ssh/known_hosts
       - uses: quarto-dev/quarto-actions/render@v2
       - name: Render site
         run: | 
