@@ -17,7 +17,6 @@ jobs:
       - name: Render site
         uses: quarto-dev/quarto-actions/render@v2
         run: | 
-        quarto render --to html
         echo "QUARTO_OUTPUT=_site" >> $GITHUB_ENV
       - name: Deploy site
         run: rsync -a ${{ env.QUARTO_OUTPUT }} dan@146.190.32.124:/home/dan/dcb-quarto-site/site
