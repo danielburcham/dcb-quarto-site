@@ -16,7 +16,7 @@ code-tools: false
 comments: false
 ---
 
-Here, I hope to share regular updates about ongoing projects, summarize interesting concepts, and explore promising approaches to studying trees, people, and the environment. 
+I am passionate about using science to build knowledge and improve lives. Here, I will post regular updates about ongoing projects and explore issues related to trees, people, and the environment using data science and statistics. 
 
 ## 2023
 

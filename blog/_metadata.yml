@@ -1,7 +1,7 @@
 description-meta: "{{< meta website.description >}}"
 
 # Date format
-date-format: "dddd, MMMM D, YYYY"
+date-format: "MMMM D, YYYY"
 
 # Default for table of contents
 toc: true
