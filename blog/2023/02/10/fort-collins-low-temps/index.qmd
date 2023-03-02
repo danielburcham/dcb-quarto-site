@@ -13,14 +13,14 @@ categories:
   - extreme values
 ---
 
-```{r setup, include=FALSE}
+```{r}
 #| code-fold: true
 library(knitr)
-#Check the settings
-knitr::opts_chunk$set(fig.width = 6, fig.align = "center", 
-                      fig.retina = 3, out.width = "85%", 
+knitr::opts_chunk$set(fig.width = 7, fig.align = "center",
+                      fig.retina = 1, out.width = "85%",
                       collapse = TRUE)
 ```
+
 
 ## The dead of winter
 
@@ -54,6 +54,7 @@ library(httr)
 library(jsonlite)
 library(modelsummary)
 library(renv)
+library(showtext)
 
 # Load FCwx data from extRemes package
 data(FCwx)
@@ -71,14 +72,16 @@ FCwx <- bind_rows(FCwx,FCwx2k) |> mutate(doy = yday(dt))
 FCwx <- FCwx[FCwx$MnT != -999,]
 
 #windowsFonts(Inter = windowsFont("Inter"))
+font_add_google("Inter","inter")
+showtext_auto()
 
 theme_nice <- function() {
-  theme_minimal(base_family = "Inter") + 
+  theme_minimal(base_family = "inter") + 
     theme(panel.grid.minor = element_blank(),
           panel.spacing.x = unit(15, "points"),
-          plot.title = element_text(family= "Inter", face = "bold"),
-          axis.title = element_text(family = "Inter"),
-          strip.text = element_text(family = "Inter", face = "bold",
+          plot.title = element_text(family= "inter", face = "bold"),
+          axis.title = element_text(family = "inter"),
+          strip.text = element_text(family = "inter", face = "bold",
                                     size = rel(1), hjust = 0),
           strip.background = element_rect(fill = "grey80", color = NA))
 }
@@ -89,7 +92,7 @@ update_geom_defaults(ggtext::GeomRichText, list(family="Inter"))
 
 Upon inspection, the data revealed some obvious patterns. Between `r min(format(FCwx$dt,"%Y"))` and `r max(format(FCwx$dt,"%Y"))`, there were `r format(sum(FCwx$MnT < 32, na.rm = TRUE),big.mark=",")` days with low temperatures below freezing in Fort Collins (approximately 44% of all observed days). Recorded on `r format(FCwx[FCwx$MnT == min(FCwx$MnT),1], "%d %B %Y")`, the coldest daily low was `r min(FCwx$MnT)`&deg; F! Wow, that's really cold. Near the lower limit of the observed range, there were `r sum(FCwx$MnT < -20, na.rm = TRUE)` days with low temperatures below -20&deg; F, but such extremely cold days were not observed uniformly over the past 122 years: `r round((nrow(FCwx |> filter(MnT < -20 & format(dt,"%Y") < 1950)) / sum(FCwx$MnT < -20, na.rm = TRUE)),3)*100`% of the events occurred before 1950.
 
-```{r global-plot, echo=TRUE, warning=FALSE, error=FALSE}
+```{r global-plot, echo=TRUE, warning=FALSE, error=FALSE, fig.showtext= TRUE}
 #| code-fold: true
 #| label: fig-global-plot
 #| fig-cap: "Daily minimum temperatures in Fort Collins, CO between 1900 and 2022"
@@ -126,7 +129,7 @@ footnote(kbl(fit0.model.summary, format="html", booktabs=TRUE, col.names=c("Para
 
 Fortunately, it is possible to account for non-stationary extremes by directly modeling variation in the distribution parameters. To explore variation in the distribution parameters over time, I fit multiple stationary GEV distributions to short, overlapping five-year segments of the data between 1902 and 2018. 
 
-```{r moving-fit, echo=TRUE, warning=FALSE, error=FALSE}
+```{r moving-fit, echo=TRUE, warning=FALSE, error=FALSE, fig.showtext=TRUE}
 #| code-fold: true
 #| label: fig-moving-fit
 #| fig-cap: "Generalized Extreme Value distribution parameters fit to running five-year windows of daily minimum temperature in Fort Collins, CO between 1902 and 2018"
@@ -221,7 +224,7 @@ footnote(kbl(fit2.model.summary, format="html", booktabs=TRUE, col.names=c("Para
 
 The fit statistics and model diagnostics generally suggest that the second model is a better choice between the two non-stationary candidates. The model could undoubtedly be improved to better fit the data, but the current version depicts broad patterns in the data reasonably well and allows for the exploration of model applications. Using the non-stationary model, it is possible to estimate return periods, return levels, and probabilities associated with extreme low temperatures. For example, I could estimate the return period (or the probability) for a -15&deg; F freeze in late December. Instead, I estimated the 100-year return levels for every day in March, April, October, and November on five different years contained in the data: 1900, 1940, 1980, 2000, and 2020. 
 
-```{r return-levels, echo=TRUE, warning=FALSE, error=FALSE}
+```{r return-levels, echo=TRUE, warning=FALSE, error=FALSE, fig.showtext=TRUE}
 #| code-fold: true
 #| label: fig-return-levels
 #| fig-cap: "Effective 100-year return levels for daily minimum temperatures in Fort Collins, CO on different dates"
