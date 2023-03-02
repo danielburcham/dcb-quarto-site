@@ -1330,7 +1330,7 @@
     },
     "renv": {
       "Package": "renv",
-      "Version": "0.17.0",
+      "Version": "0.16.0",
       "Source": "Repository",
       "Repository": "CRAN",
       "Requirements": [
