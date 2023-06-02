@@ -1,0 +1,96 @@
+---
+title: "Tree phenology observations in Wauseon, OH"
+date: 2023-03-02
+author: 
+  - name: Daniel Burcham
+    orcid: 0000-0002-1793-3945
+description: "Explore visualizations of tree phenology observations recorded by Thomas Mikesell in Wauseon, Ohio between 1883 and 1912"
+image: Effective-100-year-return-levels.png
+categories:
+  - r
+  - tidyverse
+  - ggplot
+---
+
+```{r}
+#| code-fold: true
+library(knitr)
+knitr::opts_chunk$set(fig.width = 7, fig.align = "center",
+                      fig.retina = 1, out.width = "90%",
+                      collapse = TRUE)
+```
+
+> The observer, Thomas Mikesell, was born on the farm 1 mile north of where Wauseon, Ohio, now stands in Fulton County but then Lucas County. His parents, William and Margaret (Boyes) Mikesell, came from western Pennsylvania in April, 1837, and settled in the forest.
+>
+> He attended country schools until 14 years of age and then went to the high school at Wauseon, 1 mile distant. At that time the Wauseon High School had but two rooms. In June, 1863, he enlisted in Company H, Eighty-sixth Ohio Volunteer Infantry and served with it until February 10, 1864. After leaving the Army Mr. Mikesell resumed his high-school course and in 1866 his school days ended; not so his study of nature.
+>
+> For several winters Mikesell taught elementary school in Ohio, Iowa, and northern Missouri; then he returned to Wauseon in the fall of 1869. From this time on he worked on the farm, retiring from active life in the spring of 1902. In November, 1873, he married Miss Martha Heniman, but no children have come to this union.
+>
+> In 1889 he was elected secretary of the Fulton County Fair and for 16 consecutive years he continued to serve in that capacity. In 1902 he mas appointed a corn and wheat region observer by the United States Weather Bureau and that same year, because of failing health, he was obliged to give up his farm and move to Wauseon, where he still resides.
+
+> The observations published in this present supplement are but a portion of the records that this one man maintained during his busy life. They constitute one of the most complete and reliable local records of which we have knowledge, as to the development of plant life and the migrations of birds and animals. Quietly, carefully, conscientiously, this man has merely kept his eyes open to see and systematically recorded the movements Of nature about him year after year. He has done what thousands of other men might have done, but which no other one has done. The writer believes that science owes a great debt to such a man, that all honor is due him, and that the name of Thomas Mikesell should be set high among the faithful students of nature in this country. 
+
+```{r libraries-data-graphics, echo=TRUE, warning=FALSE, error=FALSE}
+#| code-fold: true
+library(lubridate)
+library(tidyverse)
+library(readxl)
+library(showtext)
+
+# Load data and replace 999 with NA
+raw_df <- read_xlsx("./Mikesell_Phenology_Data.xlsx",sheet=1)
+raw_df$species <- as.factor(raw_df$species)
+raw_df[raw_df$bud_burst==999,3] <- NA
+raw_df[raw_df$first_leaf==999,4] <- NA
+raw_df[raw_df$full_leaf==999,5] <- NA
+
+#windowsFonts(Inter = windowsFont("Inter"))
+font_add_google("Inter","inter")
+showtext_auto()
+
+theme_nice <- function() {
+  theme_minimal(base_family = "inter") + 
+    theme(panel.grid.minor = element_blank(),
+          plot.title = element_text(family= "inter", face = "bold"),
+          axis.title = element_text(family = "inter"),
+          strip.text = element_text(family = "inter", face = "bold",
+                                    size = rel(1), hjust = 0),
+          strip.background = element_rect(fill = "grey80", color = NA))
+}
+
+update_geom_defaults("label", list(family="inter"))
+update_geom_defaults(ggtext::GeomRichText, list(family="inter"))
+```
+
+```{r bud-burst-plot, echo=TRUE, warning=FALSE, error=FALSE, fig.height = 10, fig.width = 6}
+#| code-fold: true
+#| label: fig-violin-plots-bud-burst
+
+# Compute median phenophase doy for each species and order by increasing date
+ggplot(data = raw_df, aes(x = bud_burst, y = reorder(raw_df$species, raw_df$bud_burst, FUN = median, na.rm = TRUE))) + 
+  geom_violin(aes(fill = species), show.legend = FALSE, na.rm = TRUE) + 
+  stat_summary(fun = "median", size = 3.5, geom = "point") + 
+  geom_jitter(aes(alpha = year), height = 0, width = 0.2) + 
+  xlab("Date") + ylab("Species") + 
+  scale_x_continuous(breaks=(c(100,110,120,130,140)),labels=c("April 10","April 20","April 30","May 10","May 20")) + 
+  ggtitle("Bud burst dates for various trees in\nWauseon, Ohio between 1883 and 1912") +
+  scale_y_discrete(limits=rev) + 
+  theme_nice()
+
+```
+
+```{r full-leaf-plot, echo=TRUE, warning=FALSE, error=FALSE, fig.height = 10, fig.width = 6}
+#| code-fold: true
+#| label: fig-violin-plots-full-leaf
+
+# Compute median phenophase doy for each species and order by increasing date
+ggplot(data = raw_df, aes(x = full_leaf, y = reorder(raw_df$species, raw_df$full_leaf, FUN = median, na.rm = TRUE))) + 
+  geom_violin(aes(fill = species), show.legend = FALSE, na.rm = TRUE) + 
+  stat_summary(fun = "median", size = 3.5, geom = "point") + 
+  geom_jitter(aes(alpha = year), height = 0, width = 0.2) + 
+  xlab("Date") + ylab("Species") + 
+  ggtitle("Full leaf dates for various trees in\nWauseon, Ohio between 1883 and 1912") +
+  scale_y_discrete(limits=rev) + 
+  theme_nice()
+
+```

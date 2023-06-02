@@ -60,7 +60,7 @@ library(showtext)
 data(FCwx)
 
 # Query updated FCwx observations and combine
-api <- GET("http://www.coagmet.colostate.edu/data/daily/fcl01.json?from=2000-01-01&to=2022-12-31&fields=tMax,tMin,precip")
+api <- GET(url = "http://www.coagmet.colostate.edu/data/daily/fcl01.json?from=2000-01-01&to=2022-12-31&fields=tMax,tMin,precip")
 FCwx2k <- do.call(cbind.data.frame,fromJSON(rawToChar(api$content))) |> 
   mutate(dt = as.Date(time,"%Y-%m-%d"), Dy = yday(dt), Mn = month(dt), Year = year(dt)) |>
   select(dt,Dy,Mn,Year,tMin) |> rename(MnT = tMin)
@@ -78,7 +78,7 @@ showtext_auto()
 theme_nice <- function() {
   theme_minimal(base_family = "inter") + 
     theme(panel.grid.minor = element_blank(),
-          panel.spacing.x = unit(15, "points"),
+          panel.spacing.x = unit(25, "points"),
           plot.title = element_text(family= "inter", face = "bold"),
           axis.title = element_text(family = "inter"),
           strip.text = element_text(family = "inter", face = "bold",
@@ -86,8 +86,8 @@ theme_nice <- function() {
           strip.background = element_rect(fill = "grey80", color = NA))
 }
 
-update_geom_defaults("label", list(family="Inter"))
-update_geom_defaults(ggtext::GeomRichText, list(family="Inter"))
+update_geom_defaults("label", list(family="inter"))
+update_geom_defaults(ggtext::GeomRichText, list(family="inter"))
 ```
 
 Upon inspection, the data revealed some obvious patterns. Between `r min(format(FCwx$dt,"%Y"))` and `r max(format(FCwx$dt,"%Y"))`, there were `r format(sum(FCwx$MnT < 32, na.rm = TRUE),big.mark=",")` days with low temperatures below freezing in Fort Collins (approximately 44% of all observed days). Recorded on `r format(FCwx[FCwx$MnT == min(FCwx$MnT),1], "%d %B %Y")`, the coldest daily low was `r min(FCwx$MnT)`&deg; F! Wow, that's really cold. Near the lower limit of the observed range, there were `r sum(FCwx$MnT < -20, na.rm = TRUE)` days with low temperatures below -20&deg; F, but such extremely cold days were not observed uniformly over the past 122 years: `r round((nrow(FCwx |> filter(MnT < -20 & format(dt,"%Y") < 1950)) / sum(FCwx$MnT < -20, na.rm = TRUE)),3)*100`% of the events occurred before 1950.

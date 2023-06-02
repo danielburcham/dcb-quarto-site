@@ -1,0 +1,51 @@
+---
+title: "Internal decay in landscape oaks (*Quercus* spp.): Incidence, severity, explanatory variables, and estimates of strength loss"
+date: 2023-05-10
+author:
+  - name: Nicholas J. Brazee
+    url: https://ag.umass.edu/people/nicholas-j-brazee-phd
+    affiliation: Center for Agriculture, Food, and the Environment, University of Massachusetts Amherst
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Department of Horticulture and Landscape Architecture, Colorado State University
+categories:
+  - Decay
+  - Sonic tomography
+  - Risk assessment
+pub-info:
+  reference: >-
+    <a href="https://ag.umass.edu/people/nicholas-j-brazee-phd">Nicholas J. Brazee</a> and <strong>Daniel C. Burcham</strong>. 2023. Internal decay in landscape oaks (<em>Quercus</em> spp.): Incidence, severity, explanatory variables, and estimates of strength loss. Forests 14(5):978. doi: <a href="https://doi.org/10.3390/f14050978"><code>10.3390/f14050978</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.3390/f14050978
+      icon: fa-solid fa-scroll-pdf
+doi: 10.3390/f14050978
+---
+
+## Abstract
+
+As trees age, internal decay and the risk of stem failure become important management issues for arborists. To characterize the incidence and severity of internal decay in landscape oaks, 323 pairs of sonic and electrical resistance tomograms were generated from 186 trees, representing five species: *Q. alba*, *Q. bicolor*, *Q. palustris*, *Q. rubra*, and *Q. velutina*. Overall, 135 (73%) oaks had detectable decay. When intermediate sonic velocities were included, the mean area of decay (*A*~D~) was 41% with a mean strength loss (*Z*~LOSS~) of 35%. Among all oaks, *Q. rubra* had the highest frequency of decay symptoms and signs of a pathogen. Binomial regression showed that diameter, symptoms, and oak species were the best predictors of decay incidence, and beta regression showed that diameter, scanning height, and species were the best predictors of decay severity. *Quercus alba* had the highest mean *A*~D~ while *Q. bicolor* or *Q. palustris* had significantly less decay, depending on tomogram interpretation, across all modeled conditions. Despite considerable variability, the empirical model of decay incidence and severity fit to tomography measurements can inform decay assessments of landscape oaks, but the detailed tomograms allowed more precise strength loss estimates, especially for offset decay columns.
+
+## Illustrative figure
+
+![Figure: The probability of decay for five different oak species (*Q. rubra*, *Q. palustris*, *Q. velutina*, *Q. alba*, *Q. bicolor*) by diameter at sampling height (cm) and presence of symptoms predicted by a binomial logistic regression model fit to binary decay incidence.](figure_3.png)
+
+## Materials
+
+-   [Paper](https://doi.org/10.3390/f14050978)
+
+## BibTeX citation
+
+``` bibtex
+@article{BrazeeBurcham:2023,
+    Author = {Nicholas J. Brazee and Daniel C. Burcham},
+    Doi = {10.3390/f14050978},
+    Journal = {Forests},
+    Month = {5},
+    Pages = {978},
+    Title = {Internal decay in landscape oaks (Quercus spp.): Incidence, severity, explanatory variables, and estimates of strength loss},
+    Volume = {14},
+    Issue = {5},
+    Year = {2023}}
+```

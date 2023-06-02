@@ -8,6 +8,7 @@ author:
     affiliation: Centre for Urban Greenery and Ecology, National Parks Board, Singapore
   - name: Nicholas J. Brazee
     url: https://ag.umass.edu/people/nicholas-j-brazee-phd
+    orcid: 0000-0003-3124-4684
     affiliation: Center for Agriculture, Food, and the Environment, University of Massachusetts Amherst
   - name: Robert E. Marra
     url: https://portal.ct.gov/CAES/ABOUT-CAES/Staff-Biographies/Robert-E-Marra
@@ -22,7 +23,7 @@ categories:
   - Sonic tomography
 pub-info:
   reference: >-
-    <strong>Daniel C. Burcham</strong>, <a href="https://ag.umass.edu/people/nicholas-j-brazee-phd">Nicholas J. Brazee</a>, <a href="https://portal.ct.gov/CAES/ABOUT-CAES/Staff-Biographies/Robert-E-Marra">Robert E. Marra</a>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>. 2023. Geometry matters for sonic tomography of trees. Trees: Structure and Function. doi: <a href="https://doi.org/10.1007/s00468-023-02387-4"><code>10.1007/s00468-023-02387-4</code></a>
+    <strong>Daniel C. Burcham</strong>, <a href="https://ag.umass.edu/people/nicholas-j-brazee-phd">Nicholas J. Brazee</a>, <a href="https://portal.ct.gov/CAES/ABOUT-CAES/Staff-Biographies/Robert-E-Marra">Robert E. Marra</a>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>. 2023. Geometry matters for sonic tomography of trees. Trees: Structure and Function 37(3):837-848. doi: <a href="https://doi.org/10.1007/s00468-023-02387-4"><code>10.1007/s00468-023-02387-4</code></a>
   links:
     - name: Preprint
       url: TSAF-D-22-00307.pdf
@@ -61,6 +62,10 @@ For trees growing in communities, arborists routinely check for evidence of dama
     Author = {Daniel C. Burcham, Nicholas J. Brazee, Robert E. Marra, Brian Kane},
     Doi = {10.1007/s00468-023-02387-4},
     Journal = {Trees: Structure and Function},
+    Month = {1},
+    Pages = {837-848},
     Title = {Geometry matters for sonic tomography of trees},
+    Volume = {37},
+    Issue = {3},
     Year = {2023}}
 ```

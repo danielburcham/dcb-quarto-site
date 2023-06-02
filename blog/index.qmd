@@ -16,7 +16,7 @@ code-tools: false
 comments: false
 ---
 
-I am passionate about using science to build knowledge and improve lives. Here, I will post regular updates about ongoing projects and explore issues related to trees, people, and the environment using data science and statistics. 
+For me, learning and scientific discovery are lifelong pursuits, and I hope to share some of my personal journey and, hopefully, the fruit of my labor with everyone. Here, I will post regular updates about ongoing projects, explore promising ideas or research methods, and create helpful teaching materials or illustrations. 
 
 ## 2023
 

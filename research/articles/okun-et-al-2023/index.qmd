@@ -1,0 +1,64 @@
+---
+title: "Assessing the likelihood of failure due to stem decay using different assessment techniques"
+date: 2023-05-18
+author:
+  - name: Ari Okun
+    affiliation: Department of Environmental Conservation, University of Massachusetts Amherst
+  - name: Nicholas J. Brazee
+    url: https://ag.umass.edu/people/nicholas-j-brazee-phd
+    orcid: 0000-0003-3124-4684
+    affiliation: Center for Agriculture, Food, and the Environment, University of Massachusetts Amherst
+  - name: James R. Clark
+    affiliation: HortScience | Bartlett Consulting
+  - name: Michael J. Cunningham-Minnick
+    affiliation: Department of Environmental Conservation, University of Massachusetts Amherst
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Department of Horticulture and Landscape Architecture, Colorado State University
+  - name: Brian Kane
+    url: https://eco.umass.edu/people/faculty/kane-brian-c-p/
+    orcid: 0000-0002-2814-0801
+    affiliation: Department of Environmental Conservation, University of Massachusetts Amherst
+categories:
+  - Decay
+  - Sonic tomography
+  - Risk assessment
+pub-info:
+  reference: >-
+    Ari Okun, <a href="https://ag.umass.edu/people/nicholas-j-brazee-phd">Nicholas J. Brazee</a>, James R. Clark, Michael J. Cunningham-Minnick, <strong>Daniel C. Burcham</strong>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>. 2023. Assessing the likelihood of failure due to stem decay using different assessment techniques. Forests 14(5):1043. doi: <a href="https://doi.org/10.3390/f14051043"><code>10.3390/f14051043</code></a>
+  links:
+    - name: Preprint
+      url: https://www.preprints.org/manuscript/202304.0970/v1
+      icon: fa-solid fa-file-pdf
+    - name: Final version
+      url: https://doi.org/10.3390/f14051043
+      icon: fa-solid fa-scroll-pdf
+doi: 10.3390/f14051043
+---
+
+## Abstract
+Arborists commonly investigate the extent of stem decay to assess the likelihood of stem failure when conducting tree risk assessments. Studies have shown that: (i) arborists can sometimes judge the extent of internal decay based on external signs; (ii) sophisticated tools can reliably illustrate the extent of internal decay; and (iii) assessing components of tree risk can be highly subjective. We recruited 18 experienced tree risk assessors who held the International Society of Arboriculture’s Tree Risk Assessment Qualification (TRAQ) to assess the likelihood of stem failure due to decay after each of five consecutive assessments on 30 individuals of 2 genera. The five assessment techniques, in stepwise order, were: (1) observing visually, (2) sounding the trunk with a mallet, (3) viewing a scaled diagram of the cross-section that revealed sound and decayed wood ascertained from resistance drilling, (4) viewing sonic and electrical resistance tomograms, and (5) consulting with a peer. For each technique, the assessors assigned two or more likelihood of failure ratings (LoFRs) for at least 83% of trees, which were proportionally greatest after the assessors viewed the tomograms; the proportions did not differ among the other four assessment techniques. Covariates that influenced the distribution of the LoFRs included percent of the cross-section that was decayed, and assessors’ experience using resistance drilling devices and tomography in regular practice. Practitioners should be aware that disagreement on the likelihood of tree failure exists even among experienced arborists.
+
+## Illustrative figure
+
+![Figure: Proportional response of likelihood of failure ratings as related to how frequently assessors use tomography for risk assessments.](forests-14-01043-g006.png){width=55%}
+
+## Materials
+
+-   [Paper](https://doi.org/10.3390/f14051043)
+
+## BibTeX citation
+
+``` bibtex
+@article{Okunetal:2023,
+    Author = {Ari Okun, Nicholas J. Brazee, James R. Clark, Michael J. Cunningham-Minnick, Daniel C. Burcham, Brian Kane},
+    Doi = {10.3390/f14051043},
+    Journal = {Forests},
+    Month = {5},
+    Pages = {1043},
+    Title = {Assessing the likelihood of failure due to stem decay using different assessment techniques},
+    Volume = {14},
+    Issue = {5},
+    Year = {2023}}
+```
