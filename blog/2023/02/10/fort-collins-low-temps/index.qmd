@@ -60,7 +60,7 @@ library(showtext)
 data(FCwx)
 
 # Query updated FCwx observations and combine
-api <- GET(url = "http://www.coagmet.colostate.edu/data/daily/fcl01.json?from=2000-01-01&to=2022-12-31&fields=tMax,tMin,precip")
+api <- GET("https://coagmet.colostate.edu/data/daily/fcl01.json?from=2000-01-01&to=2022-12-31&fields=tMax,tMin,precip")
 FCwx2k <- do.call(cbind.data.frame,fromJSON(rawToChar(api$content))) |> 
   mutate(dt = as.Date(time,"%Y-%m-%d"), Dy = yday(dt), Mn = month(dt), Year = year(dt)) |>
   select(dt,Dy,Mn,Year,tMin) |> rename(MnT = tMin)
