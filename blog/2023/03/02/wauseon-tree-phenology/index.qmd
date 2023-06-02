@@ -38,7 +38,7 @@ library(readxl)
 library(showtext)
 
 # Load data and replace 999 with NA
-raw_df <- read_xlsx("./Mikesell_Phenology_Data.xlsx",sheet=1)
+raw_df <- read_xlsx("Mikesell_Phenology_Data.xlsx",sheet=1)
 raw_df$species <- as.factor(raw_df$species)
 raw_df[raw_df$bud_burst==999,3] <- NA
 raw_df[raw_df$first_leaf==999,4] <- NA
