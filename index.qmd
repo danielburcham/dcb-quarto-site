@@ -1,7 +1,6 @@
 ---
-title: "Daniel Burcham"
-pagetitle: "{{< meta website.title >}}"
-description-meta: "{{< meta website.description >}}"
+title: "Welcome!"
+pagetitle: "Daniel Burcham"
 image: avatar.jpg
 about:
   template: trestles
