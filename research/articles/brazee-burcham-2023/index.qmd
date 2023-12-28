@@ -4,6 +4,7 @@ date: 2023-05-10
 author:
   - name: Nicholas J. Brazee
     url: https://ag.umass.edu/people/nicholas-j-brazee-phd
+    orcid: 0000-0003-3124-4684
     affiliation: Center for Agriculture, Food, and the Environment, University of Massachusetts Amherst
   - name: Daniel C. Burcham
     url: https://danielburcham.dev

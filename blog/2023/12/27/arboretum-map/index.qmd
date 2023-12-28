@@ -1,0 +1,26 @@
+---
+title: "Heritage Arboretum Collection Explorer"
+date: 2023-12-27
+author: 
+  - name: Daniel Burcham
+    orcid: 0000-0002-1793-3945
+description: "An interactive map for informal exploration of the CSU Heritage Arboretum"
+image: Arboretum-web-map.png
+categories:
+  - gis
+  - maps
+---
+
+## Documenting a living museum
+
+The CSU Heritage Arboretum, situated just west of the football stadium, contains an expansive collection of over 1,300 woody plants on a modest 6 acres. The public green space, managed by my department (Horticulture and Landscape Architecture), sustains the diverse collection for public display, horticultural research, and education activities, including several undergraduate courses at the university. Guided largely by passionate CSU faculty since the late 1970's, the woody plant collection gradually developed over several decades with plant material often donated by partners involved in horticultural research and commerce. By regularly monitoring the arboretum’s collection, university faculty and staff have identified the most dependable woody plants for use in our semi-arid regional landscapes, distinguished by highly variable and adverse weather conditions, and the arboretum is a valuable place for anyone to study and observe many trees and shrubs commonly found in developed landscapes throughout the surrounding region. 
+
+Like all museums, an arboretum maintains the integrity of its living collections through a variety of curatorial practices, and the documentation of a living collection, using a combination of electronic repositories and physical markers, facilitates the learning and inquiry often distinguishing an arboretum from a park. However, the documentation of the woody plant collection in the Heritage Arboretum was developed using simple technologies precluding online access to the information by staff and visitors for managing and viewing records, respectively. In the most recent iteration, Microsoft Access databases, coupled with AutoCAD plot plans, were used to store curatorial and location information about the plants, and there was a need to improve documentation practices to strengthen existing programs and develop new initiatives. Over the past year, I have been working with CSU students on creating a new collection inventory for the Heritage Arboretum. Using ArcGIS, we've moved existing records and recorded new location information in a new geospatial data format, and we created a new collection explorer map for public use. 
+
+If you haven't been to the arboretum recently, I hope you will consider visiting and using the map to learn more about our trees. If you have any ideas about improving the map or related information, I would love to hear your thoughts!
+
+```{=html}
+<iframe width="800" height="600" frameborder="0" allowfullscreen src="https://arcg.is/1yzvz00"></iframe>
+```
+
+
