@@ -1,7 +1,8 @@
 {
   "listingMap": {
     "blog\\index.qmd": [
-      "2023/**/index.qmd"
+      "2023/**/index.qmd",
+      "2024/**/index.qmd"
     ],
     "research\\index.qmd": [
       "articles/*/index.qmd"

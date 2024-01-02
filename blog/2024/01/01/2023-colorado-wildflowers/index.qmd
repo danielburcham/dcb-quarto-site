@@ -1,0 +1,37 @@
+---
+title: "Colorado wildflowers"
+date: 2024-01-01
+author: 
+  - name: Daniel Burcham
+    orcid: 0000-0002-1793-3945
+description: "Reflecting on an abundant season"
+image: DSCF6010.jpeg
+categories:
+  - wildflowers
+---
+
+## Confessions of an outsider
+
+When I first moved to Fort Collins, I was honestly dismayed by the lack of green plant life, apart from a short burst of growth in the spring, in most natural areas. In earlier stages of my life, I always lived in places with relatively more rain, and I overlooked the dependence of all life on the reliable presence of water. After grieving the loss of chlorophyll, I slowly began to appreciate the impressive diversity of plants living in the semi-arid steppe climate. Like the people, the plants living in the west have adapted with sophisticated strategies to thrive in the harsh conditions with unique attractiveness, and I increasingly regard the subtle beauty of dryland plants with great partiality. In truth, the initial disappointment was merely an opportunity to change perspectives on a beloved subject. 
+
+## Discovering beauty on the trail
+
+Fortunately, the growing season last year offered some spectacular wildflower displays after a very snowy winter in most of Colorado. I relished the opportunity to explore some of the state's impressive landscapes and see the unmatched beauty and variety of colorful blossoms. Over the summer, I enjoyed a new wildflower hike nearly every weekend, and it would take a lifetime to enjoy the remaining untraveled trails. As I reflect on 2023, I am grateful for the experiences of the past year and excited to discover more natural beauty, in all its facets, in the year ahead. 
+
+Below, you can see a few of my discoveries and, potentially, some inspiration for your own outdoor adventures!
+
+[![tufted evening primrose (*Oenothera caespitosa*), Larimer County](DSCF5838_Crop.jpg){fig-align="center" width="50%"}](DSCF5838.jpeg)
+
+[![fairy slipper (*Calypso bulbosa*), Boulder County](DSCF5848_Crop.jpg){fig-align="center" width="50%"}](DSCF5848.jpeg)
+
+[![rock clematis (*Clematis columbiana*), Boulder County](DSCF5861_Crop.jpg){fig-align="center" width="50%"}](DSCF5861.jpeg)
+
+[![sidebells penstemon (*Penstemon secundiflorus*), Boulder County](DSCF5863_Crop.jpg){fig-align="center" width="50%"}](DSCF5863.jpeg)
+
+[![tall mountain shootingstar (*Primula jeffreyi*), Clear Creek County](DSCF5959_Crop.jpg){fig-align="center" width="50%"}](DSCF5959.jpeg)
+
+[![elephant's head (*Pedicularis groenlandica*), Gunnison County](DSCF6011_Crop.jpg){fig-align="center" width="50%"}](DSCF6011.jpeg)
+
+[![monument plant (*Frasera speciosa*), Gunnison County](DSCF6013_Crop.jpg){fig-align="center" width="50%"}](DSCF6013.jpeg)
+
+[![spotted coralroot (*Corallorhiza maculata*), Gunnison County](DSCF6038_Crop.jpg){fig-align="center" width="50%"}](DSCF6038.jpeg)

@@ -2,6 +2,11 @@
 title: "Blog"
 author: ""
 listing:
+  - id: posts_2024
+    contents: "2024/**/index.qmd"
+    sort: "date desc"
+    template: ../html/blog/listing.ejs
+    categories: true
   - id: posts_2023
     contents: "2023/**/index.qmd"
     sort: "date desc"
@@ -16,6 +21,11 @@ comments: false
 ---
 
 For me, learning and scientific discovery are lifelong pursuits, and I hope to share some of my personal journey and, hopefully, the fruit of my labor with everyone. Here, I will post regular updates about ongoing projects, explore promising ideas or research methods, and create helpful teaching materials or illustrations. 
+
+## 2024
+
+:::{#posts_2024}
+:::
 
 ## 2023
 
