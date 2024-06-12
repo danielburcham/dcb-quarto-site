@@ -15,17 +15,8 @@ jobs:
         with:
           use-public-rspm: true
       
-      - name: "Setup R dependecies for Quarto knitr engine"
-        uses: r-lib/actions/setup-r-dependencies@v2
-        with: 
-          packages:
-            any::shinylive
-            any::knitr
-            any::rmarkdown
-            any::downlit
-            any::xml2
-      
-      - uses: r-lib/actions/setup-renv@v2
+      - name: "Setup renv"
+        uses: r-lib/actions/setup-renv@v2
       
       - name: "Setup Quarto"
         uses: quarto-dev/quarto-actions/setup@v2
