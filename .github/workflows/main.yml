@@ -29,7 +29,7 @@ jobs:
             any::xml2
             
       - name: "Setup Renv"
-        uses: r-lib/setup-renv@v2
+        uses: r-lib/actions/setup-renv@v2
       
       - name: "Setup Quarto"
         uses: quarto-dev/quarto-actions/setup@v2
