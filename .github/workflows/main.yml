@@ -22,7 +22,7 @@ jobs:
         uses: r-lib/actions/setup-r-dependencies@v2
         with:
           packages:
-            cran::shinylive@0.1.1 ## Pin version to ensure consistency
+            cran::shinylive@0.1.1
             any::knitr
             any::rmarkdown
             any::downlit
