@@ -1,0 +1,19 @@
+Type: project
+Description: My project
+Depends:
+    bslib,
+    extRemes,
+    ggtext,
+    gridExtra,
+    httr,
+    jsonlite,
+    kableExtra,
+    knitr,
+    lubridate,
+    modelsummary,
+    renv,
+    shiny,
+    shinylive,
+    showtext,
+    tidyverse,
+    shiny

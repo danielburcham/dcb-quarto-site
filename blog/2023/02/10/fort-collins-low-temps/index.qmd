@@ -53,7 +53,6 @@ library(kableExtra)
 library(httr)
 library(jsonlite)
 library(modelsummary)
-library(renv)
 library(showtext)
 
 # Load FCwx data from extRemes package
