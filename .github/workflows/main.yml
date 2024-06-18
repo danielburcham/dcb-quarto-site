@@ -18,7 +18,7 @@ jobs:
       - name: "Install system dependencies"
         run: |
           install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
-          install.packages(c("jsonlite","knitr","shinylive","rmarkdown","downlit","xml2")
+          install.packages(c("jsonlite","knitr","shinylive","rmarkdown","downlit","xml2"))
           .libPaths(c(system.file("library", package = "pak"), .libPaths()))
           pkgdepends::new_pkg_installation_proposal(
             names(jsonlite::read_json("renv.lock")$Packages), config = list(dependencies = FALSE)
