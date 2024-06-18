@@ -112,7 +112,8 @@
     "archive": {
       "Package": "archive",
       "Version": "1.1.8",
-      "Source": "Repository"
+      "Source": "Repository",
+      "Repository": "CRAN"
     },
     "askpass": {
       "Package": "askpass",
