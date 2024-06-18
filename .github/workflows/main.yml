@@ -17,12 +17,13 @@ jobs:
         
       - name: "Install system dependencies"
         run: |
-          install.packages("pak")
+          install.packages("pak", repos = "https://r-lib.github.io/p/pak/stable/")
           install.packages("jsonlite")
           .libPaths(c(system.file("library", package = "pak"), .libPaths()))
           pkgdepends::new_pkg_installation_proposal(
-            names(jsonlite::read_json("renv.lock")$packages), config = list(dependencies = FALSE)
+            names(jsonlite::read_json("renv.lock")$Packages), config = list(dependencies = FALSE)
           )$solve()$install_sysreqs()
+        shell: Rscript {0}
       
       - name: "Setup renv"
         uses: r-lib/actions/setup-renv@v2
