@@ -1,10 +1,10 @@
 ---
-title: "Historical low temperatures in Fort Collins, CO"
+title: "Historical low temperatures in Fort Collins, Colorado"
 date: 2023-02-10
 author: 
   - name: Daniel Burcham
     orcid: 0000-0002-1793-3945
-description: "Use the {extRemes} R package to fit extreme value distributions to daily low temperatures"
+description: "Use the `extRemes` R package to fit extreme value distributions to daily low temperatures"
 image: Effective-100-year-return-levels.png
 categories:
   - r
@@ -48,7 +48,6 @@ library(tidyverse)
 library(ggtext)
 library(extRemes)
 library(gridExtra)
-library(lubridate)
 library(kableExtra)
 library(httr)
 library(jsonlite)
