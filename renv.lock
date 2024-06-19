@@ -447,6 +447,11 @@
       ],
       "Hash": "c487520bf184bb21e7b021e2ae732980"
     },
+    "downlit": {
+      "Package": "downlit",
+      "Version": "0.4.4",
+      "Source": "Repository"
+    },
     "dplyr": {
       "Package": "dplyr",
       "Version": "1.1.4",
