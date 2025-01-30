@@ -24,10 +24,10 @@ For me, learning and scientific discovery are lifelong pursuits, and I hope to s
 
 ## 2024
 
-:::{#posts_2024}
+::: {#posts_2024}
 :::
 
 ## 2023
 
-:::{#posts_2023}
+::: {#posts_2023}
 :::
