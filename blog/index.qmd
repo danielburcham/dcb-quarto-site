@@ -22,6 +22,8 @@ comments: false
 
 For me, learning and scientific discovery are lifelong pursuits, and I hope to share some of my personal journey and, hopefully, the fruit of my labor with everyone. Here, I will post regular updates about ongoing projects, explore promising ideas or research methods, and create helpful teaching materials or illustrations. 
 
+Hello.
+
 ## 2024
 
 ::: {#posts_2024}
