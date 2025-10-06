@@ -1,0 +1,63 @@
+---
+title: "Quantifying life-history trade-offs in diameter growth for tropical tree species from a large urban inventory dataset"
+date: 2025-07-31
+author:
+  - name: Hao Ran Lai
+    url: https://hrlai.netlify.app/
+    orcid: 0000-0001-6871-0146
+    affiliation: Centre for Integrative Ecology, School of Biological Sciences, University of Canterbury, Christchurch 8140, New Zealand
+  - name: Daniel C. Burcham
+    url: https://danielburcham.dev
+    orcid: 0000-0002-1793-3945
+    affiliation: Department of Horticulture and Landscape Architecture, Colorado State University
+  - name: James Wei Wang
+    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+  - name: Daniel B. Stouffer
+    url: https://stoufferlab.org/
+    orcid: 0000-0001-9436-9674
+    affiliation: Department of Evolutionary and Integrative Ecology, Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB), Berlin, Germany
+  - name: Damien Wenjie Qiu
+    orcid: 0009-0000-9960-8849
+    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+  - name: Alex Thiam Koon Yee
+    orcid: 0000-0002-6465-0075
+    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+  
+categories:
+  - Tree demography
+  - Urban forestry
+pub-info:
+  reference: >-
+    <a href="https://hrlai.netlify.app/">Hao Ran Lai</a>, <strong>Daniel C. Burcham</strong>, James Wei Wang, <a href="https://stoufferlab.org/">Daniel B. Stouffer</a>, Damien Qiu Wenjie, Alex Thiam Koon Yee. 2025. Quantifying life-history trade-offs in diameter growth for tropical tree species from a large urban inventory dataset. Urban Forestry & Urban Greening 112:128982. doi: <a href="https://doi.org/10.1016/j.ufug.2025.128982"><code>10.1016/j.ufug.2025.128982</code></a>
+  links:
+    - name: Final version
+      url: https://doi.org/10.1016/j.ufug.2025.128982
+      icon: fa-solid fa-scroll-pdf
+doi: 10.1016/j.ufug.2025.128982
+---
+
+## Abstract
+
+Trees are important ecosystem service providers that improve the physical environment and human experience in cities throughout the world. Since the ecosystem services and maintenance requirements of urban trees change as they grow in time, predictive models of tree growth rates are useful to forecast societal benefits and maintenance costs over a tree’s lifetime. However, many models to date are phenomenological models with good prediction accuracies but lacking biologically interpretable parameters. This has limited our understanding of species life-history strategies for guiding tree species selection for urban plantings. In this study, we fit a diameter growth model to a large municipal tree inventory in Singapore using Bayesian inference and ordinary differential equation solver to obtain both biologically interpretable parameters and transferable predictions. We show that the 126 tree species studied here have growth parameters described by a tradeoff between fast juvenile growth when small versus slower but sustained adult growth when large, corresponding to the well-established “fast–slow” plant economics spectrum. These biological insights generally transferred well across time within the same locality; the transferability across space to a distant dataset in the United States was more variable, but it demonstrates that a biologically informed model produces more realistic predictions compared to phenomenological curve-fitting. Our findings highlight a more tangible way of selecting species for planting based not only on predicted growth, but also intuitive life-history growth characteristics that could be further generalised by functional traits to explore new species suitable for urban forestry.
+
+## Illustrative figure
+
+![Figure: Conceptual diagram of a hypothetical tree species' diameter growth curve (black) given by Eq. (1), which partitions the growth process into the product of two size-dependent components: growth expansion (blue) and growth decline (red).](figure_1.jpg)
+
+## Materials
+
+-   [Paper](https://doi.org/10.1016/j.ufug.2025.128982)
+
+## BibTeX citation
+
+``` bibtex
+@article{LaiEtAl:2023,
+    Author = {Hao Ran Lai, Daniel C. Burcham, James Wei Wang, Daniel B. Stouffer, Damien Qiu Wenjie, Alex Thiam Koon Yee},
+    Doi = {10.1016/j.ufug.2025.128982},
+    Journal = {Urban Forestry & Urban Greening},
+    Month = {7},
+    Pages = {128982},
+    Title = {Quantifying life-history trade-offs in diameter growth for tropical tree species from a large urban inventory dataset},
+    Volume = {112},
+    Year = {2025}}
+```
