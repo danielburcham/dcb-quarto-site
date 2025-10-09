@@ -19,10 +19,10 @@ categories:
   - Vibration properties
 pub-info:
   reference: >-
-    <strong>Daniel C. Burcham</strong>, <a href="https://experts.exeter.ac.uk/40513-zuo-zhu">Zuo Zhu</a>, <a href="https://dr.ntu.edu.sg/cris/rp/rp00182">Siu-Kui Au</a>. 2025. Tracking seasonal variation in modal properties of an open-grown green ash (<em>Fraxinus pennsylvanica</em>. doi: <a href="https://doi.org/"><code></code></a>
+    <strong>Daniel C. Burcham</strong>, <a href="https://experts.exeter.ac.uk/40513-zuo-zhu">Zuo Zhu</a>, <a href="https://dr.ntu.edu.sg/cris/rp/rp00182">Siu-Kui Au</a>. 2025. Tracking seasonal variation in modal properties of an open-grown green ash (<em>Fraxinus pennsylvanica</em>. doi: <a href="https://doi.org/10.1101/2025.10.06.680820"><code>10.1101/2025.10.06.680820</code></a>
   links:
     - name: Preprint
-      url: https://doi.org/
+      url: https://doi.org/10.1101/2025.10.06.680820
       icon: fa-solid fa-file-pdf
       local: true
     - name: Data
@@ -40,14 +40,14 @@ Despite longstanding interest and varied applications, the vibration behavior of
 
 ## Materials
 
--   [Paper](https://doi.org/)
+-   [Paper](https://doi.org/10.1101/2025.10.06.680820)
 
 ## BibTeX citation
 
 ``` bibtex
 @article{BurchamZhuAu:2025,
     Author = {Daniel C. Burcham, Zuo Zhu, Siu-Kui Au},
-    Doi = {},
+    Doi = {10.1101/2025.10.06.680820},
     Journal = {},
     Month = {},
     Pages = {128982},
