@@ -28,7 +28,7 @@ pub-info:
     - name: Data
       url: https://doi.org/10.7910/DVN/ZTYPJE
       icon: fa-solid fa-table
-doi: https://doi.org/
+doi: https://doi.org/10.1101/2025.10.06.680820
 ---
 
 ## Abstract
@@ -36,7 +36,7 @@ Despite longstanding interest and varied applications, the vibration behavior of
 
 ## Illustrative figure
 
-![Figure: Conceptual diagram of a hypothetical tree species' diameter growth curve (black) given by Eq. (1), which partitions the growth process into the product of two size-dependent components: growth expansion (blue) and growth decline (red).](figure_1.jpg)
+![Figure: Power spectral density (PSD) and singular value (SV) spectra computed from a one-hour time history of ambient vibration of a green ash (*Fraxinus pennsylvanica* 'Sherwood Glen'. Although the PSD spectrum shows dynamic amplification around 0.8 Hz for all three axes, the SV spectrum indicates the existence of two close modes around the same frequency.)](PSD_SV_04_Apr_22_1500.jpeg)
 
 ## Materials
 
@@ -50,7 +50,7 @@ Despite longstanding interest and varied applications, the vibration behavior of
     Doi = {10.1101/2025.10.06.680820},
     Journal = {},
     Month = {},
-    Pages = {128982},
+    Pages = {},
     Title = {Tracking seasonal variation in modal properties of an open-grown green ash (Fraxinus pennsylvanica)},
     Volume = {},
     Year = {2025}}
