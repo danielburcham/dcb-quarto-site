@@ -5,23 +5,23 @@ author:
   - name: Hao Ran Lai
     url: https://hrlai.netlify.app/
     orcid: 0000-0001-6871-0146
-    affiliation: Centre for Integrative Ecology, School of Biological Sciences, University of Canterbury, Christchurch 8140, New Zealand
+    affiliation: Centre for Integrative Ecology, School of Biological Sciences, University of Canterbury
   - name: Daniel C. Burcham
     url: https://danielburcham.dev
     orcid: 0000-0002-1793-3945
     affiliation: Department of Horticulture and Landscape Architecture, Colorado State University
   - name: James Wei Wang
-    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+    affiliation: National Parks Board, Singapore Botanic Gardens
   - name: Daniel B. Stouffer
     url: https://stoufferlab.org/
     orcid: 0000-0001-9436-9674
-    affiliation: Department of Evolutionary and Integrative Ecology, Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB), Berlin, Germany
+    affiliation: Department of Evolutionary and Integrative Ecology, Leibniz Institute of Freshwater Ecology and Inland Fisheries (IGB)
   - name: Damien Wenjie Qiu
     orcid: 0009-0000-9960-8849
-    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+    affiliation: National Parks Board, Singapore Botanic Gardens
   - name: Alex Thiam Koon Yee
     orcid: 0000-0002-6465-0075
-    affiliation: National Parks Board, Singapore Botanic Gardens, Singapore
+    affiliation: National Parks Board, Singapore Botanic Gardens
   
 categories:
   - Tree demography
