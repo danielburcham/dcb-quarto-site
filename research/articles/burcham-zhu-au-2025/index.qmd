@@ -24,7 +24,6 @@ pub-info:
     - name: Preprint
       url: https://doi.org/10.1101/2025.10.06.680820
       icon: fa-solid fa-file-pdf
-      local: true
     - name: Data
       url: https://doi.org/10.7910/DVN/ZTYPJE
       icon: fa-solid fa-table

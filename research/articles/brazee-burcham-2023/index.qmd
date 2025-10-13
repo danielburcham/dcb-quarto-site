@@ -20,7 +20,7 @@ pub-info:
   links:
     - name: Final version
       url: https://doi.org/10.3390/f14050978
-      icon: fa-solid fa-scroll-pdf
+      icon: fa-solid fa-scroll
 doi: 10.3390/f14050978
 ---
 

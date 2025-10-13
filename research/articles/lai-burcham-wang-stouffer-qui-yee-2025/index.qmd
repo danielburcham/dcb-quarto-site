@@ -32,7 +32,7 @@ pub-info:
   links:
     - name: Final version
       url: https://doi.org/10.1016/j.ufug.2025.128982
-      icon: fa-solid fa-scroll-pdf
+      icon: fa-solid fa-scroll
     - name: Preprint
       url: https://doi.org/10.32942/X2FG9W
       icon: fa-solid fa-file-pdf
