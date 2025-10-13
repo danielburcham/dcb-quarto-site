@@ -19,7 +19,7 @@ categories:
   - Vibration properties
 pub-info:
   reference: >-
-    <strong>Daniel C. Burcham</strong>, <a href="https://experts.exeter.ac.uk/40513-zuo-zhu">Zuo Zhu</a>, <a href="https://dr.ntu.edu.sg/cris/rp/rp00182">Siu-Kui Au</a>. 2025. Tracking seasonal variation in modal properties of an open-grown green ash (<em>Fraxinus pennsylvanica</em>. doi: <a href="https://doi.org/10.1101/2025.10.06.680820"><code>10.1101/2025.10.06.680820</code></a>
+    <strong>Daniel C. Burcham</strong>, <a href="https://experts.exeter.ac.uk/40513-zuo-zhu">Zuo Zhu</a>, <a href="https://dr.ntu.edu.sg/cris/rp/rp00182">Siu-Kui Au</a>. 2025. Tracking seasonal variation in modal properties of an open-grown green ash (<em>Fraxinus pennsylvanica</em>). doi: <a href="https://doi.org/10.1101/2025.10.06.680820"><code>10.1101/2025.10.06.680820</code></a>
   links:
     - name: Preprint
       url: https://doi.org/10.1101/2025.10.06.680820
@@ -36,7 +36,7 @@ Despite longstanding interest and varied applications, the vibration behavior of
 
 ## Illustrative figure
 
-![Figure: Power spectral density (PSD) and singular value (SV) spectra computed from a one-hour time history of ambient vibration of a green ash (*Fraxinus pennsylvanica* 'Sherwood Glen'. Although the PSD spectrum shows dynamic amplification around 0.8 Hz for all three axes, the SV spectrum indicates the existence of two close modes around the same frequency.)](PSD_SV_04_Apr_22_1500.jpeg)
+![Figure: Power spectral density (PSD) and singular value (SV) spectra computed from a one-hour time history of ambient vibration of a green ash (*Fraxinus pennsylvanica* 'Sherwood Glen'). Although the PSD spectrum shows dynamic amplification around 0.8 Hz for all three axes, the SV spectrum indicates the existence of two close modes around the same frequency.](PSD_SV_04_Apr_22_1500.jpeg)
 
 ## Materials
 
