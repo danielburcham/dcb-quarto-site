@@ -51,7 +51,7 @@ Trees are important ecosystem service providers that improve the physical enviro
 ## BibTeX citation
 
 ``` bibtex
-@article{LaiEtAl:2023,
+@article{LaiEtAl:2025,
     Author = {Hao Ran Lai, Daniel C. Burcham, James Wei Wang, Daniel B. Stouffer, Damien Qiu Wenjie, Alex Thiam Koon Yee},
     Doi = {10.1016/j.ufug.2025.128982},
     Journal = {Urban Forestry & Urban Greening},
