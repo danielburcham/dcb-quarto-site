@@ -39,7 +39,7 @@ Despite longstanding interest and varied applications, the vibration behavior of
 
 ## Materials
 
--   [Paper](https://doi.org/10.1101/2025.10.06.680820)
+-   [Preprint](https://doi.org/10.1101/2025.10.06.680820)
 
 ## BibTeX citation
 
