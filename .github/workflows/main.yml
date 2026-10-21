@@ -59,4 +59,4 @@ jobs:
           tags: tag:ci
       
       - name: Deploy site
-        run: rsync -a -e "ssh -i ~/.ssh/id_ed25519_deploy" _site deploy@100.169.237.87:/home/deploy/dcb-quarto-site
+        run: rsync -a -e "ssh -i ~/.ssh/id_ed25519_deploy" _site deploy@100.69.237.87:/home/deploy/dcb-quarto-site
