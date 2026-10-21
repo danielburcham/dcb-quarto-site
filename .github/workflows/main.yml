@@ -50,6 +50,13 @@ jobs:
       
       - name: Render site
         uses: quarto-dev/quarto-actions/render@v2
+        
+      - name: Connect to Tailscale
+        uses: tailscale/github-actions@v3
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:ci
       
       - name: Deploy site
-        run: rsync -a -e "ssh -i ~/.ssh/id_ed25519_deploy" _site deploy@137.184.5.79:/home/deploy/dcb-quarto-site
+        run: rsync -a -e "ssh -i ~/.ssh/id_ed25519_deploy" _site deploy@100.169.237.87:/home/deploy/dcb-quarto-site
