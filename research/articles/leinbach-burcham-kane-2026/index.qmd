@@ -18,7 +18,7 @@ categories:
   - Pruning
 pub-info:
   reference: >-
-    David Leinbach, <strong>Daniel C. Burcham</strong>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>. 2026. Modest increase in wind-induced bending moments on raised and thinned Colorado spruce (*Picea pungens*). Urban Forestry & Urban Greening 126:129719. doi: <a href="https://doi.org/10.1016/j.ufug.2026.129719"><code>10.1016/j.ufug.2026.129719</code></a>
+    David Leinbach, <strong>Daniel C. Burcham</strong>, <a href="https://eco.umass.edu/people/faculty/kane-brian-c-p/">Brian Kane</a>. 2026. Modest increase in wind-induced bending moments on raised and thinned Colorado spruce (<em>Picea pungens</em>). Urban Forestry & Urban Greening 126:129719. doi: <a href="https://doi.org/10.1016/j.ufug.2026.129719"><code>10.1016/j.ufug.2026.129719</code></a>
   links:
     - name: Final version
       url: https://doi.org/10.1016/j.ufug.2026.129719
